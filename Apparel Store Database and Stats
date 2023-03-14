@@ -2,21 +2,22 @@
 
 CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, size TEXT, quantity INTEGER);
 
-INSERT INTO store VALUES (1, "Dress", 40.00, "S", 54);
-INSERT INTO store VALUES (2, "Skirt", 30.99, "M", 64);
-INSERT INTO store VALUES (3, "Activewear", 25.00, "L", 4);
-INSERT INTO store VALUES (4, "Pants", 20.00, "L", 104);
-INSERT INTO store VALUES (5, "Jumpsuit", 49.99, "M", 299);
-INSERT INTO store VALUES (6, "Leggings", 10.00, "S", 32);
-INSERT INTO store VALUES (7, "Socks", 2.99, "S", 6);
-INSERT INTO store VALUES (8, "underwear", 12.00, "M", 6);
-INSERT INTO store VALUES (9, "Bras", 15.95, "L", 76);
-INSERT INTO store VALUES (10, "Bathing Suit", 15.00, "S", 55);
-INSERT INTO store VALUES (11, "Sweater", 4.00, "M", 151);
-INSERT INTO store VALUES (12, "Shoes", 119.98, "L", 502);
-INSERT INTO store VALUES (13, "Scarf", 19.99, "L", 98);
-INSERT INTO store VALUES (14, "Shirt", 35.00, "M", 52);
-INSERT INTO store VALUES (15, "Jacket", 88.99, "S", 53);
+INSERT INTO store (id, item, price, size, quantity) VALUES
+(1, "Dress", 40.00, "S", 54),
+(2, "Skirt", 30.99, "M", 64),
+(3, "Activewear", 25.00, "L", 4),
+(4, "Pants", 20.00, "L", 104),
+(5, "Jumpsuit", 49.99, "M", 299),
+(6, "Leggings", 10.00, "S", 32),
+(7, "Socks", 2.99, "S", 6),
+(8, "underwear", 12.00, "M", 6),
+(9, "Bras", 15.95, "L", 76),
+(10, "Bathing Suit", 15.00, "S", 55),
+(11, "Sweater", 4.00, "M", 151),
+(12, "Shoes", 119.98, "L", 502),
+(13, "Scarf", 19.99, "L", 98),
+(14, "Shirt", 35.00, "M", 52),
+(15, "Jacket", 88.99, "S", 53);
 
 --display the database ordered by price in ascending order. 
 SELECT * FROM store
