@@ -1,0 +1,22 @@
+# For this project, I fabricated my own data.
+# I then created a table to insert data into it, for the purpose of showcasing table creation.
+# Lastly, I performed one analysis on the data using SQL.
+
+#Creating the table: 
+CREATE TABLE account(
+	user_id SERIAL PRIMARY KEY,
+	username VARCHAR(50) UNIQUE NOT NULL,
+	password VARCHAR(50) NOT NULL,
+	email VARCHAR (250) UNIQUE NOT NULL,
+	created_on TIMESTAMP NOT NULL,
+	last_login TIMESTAMP
+)
+
+#Next, I then inserted data into the table.
+
+#Lastly, I performed the following SQL.
+
+#This code outputs the last 10 usernames that last signed in recently. 
+SELECT username FROM account
+ORDER BY username desc
+LIMIT 10;
